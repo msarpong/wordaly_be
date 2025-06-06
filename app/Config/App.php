@@ -57,7 +57,7 @@ class App extends BaseConfig
      *
      * WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
      */
-    public string $uriProtocol = 'REQUEST_URI';
+    public string $uriProtocol = 'PATH_INFO';
 
     /*
     |--------------------------------------------------------------------------
@@ -133,8 +133,8 @@ class App extends BaseConfig
      * @see https://www.php.net/manual/en/timezones.php for list of timezones
      *      supported by PHP.
      */
-    public string $appTimezone = 'UTC';
-
+//    public string $appTimezone = 'UTC';
+    public string $appTimezone = 'Europe/Rome';
     /**
      * --------------------------------------------------------------------------
      * Default Character Set
